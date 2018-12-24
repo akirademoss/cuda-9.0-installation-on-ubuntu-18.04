@@ -2,11 +2,11 @@
 This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.0 in ubuntu 18.04.  This version of CUDA will work with the tensorflow-gpu install.
 
 ## Summary of Steps 
-#### 1.) Verify you hava a cuda capable GPU
-#### 2.) Install nvidia cuda toolkit's software dependencies
-#### 3.) Download and install the nvidia cuda toolkit and cudnn
-#### 4.) Setup environmental variables
-#### 5.) Verify the installation
+1.) Verify you hava a cuda capable GPU
+2.) Install nvidia cuda toolkit's software dependencies
+3.) Download and install the nvidia cuda toolkit and cudnn
+4.) Setup environmental variables
+5.) Verify the installation
 
 
 ## 1.) Verify you hava a CUDA capable GPU
