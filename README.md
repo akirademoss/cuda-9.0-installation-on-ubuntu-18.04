@@ -1,12 +1,13 @@
-# This gist contains step by step instructions to install cuda v9.0 and cudnn 7.2 in ubuntu 18.04
+# CUDA 9.0 installation on Ubuntu 18.04 LTS 
+This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.0 in ubuntu 18.04.  This version of CUDA will work with the tensorflow-gpu install.
 
-### Primary Steps ####
-# Verify you hava a cuda capable GPU
-# Install nvidia cuda toolkit's software dependencies
-# Download and install the nvidia cuda toolkit and cudnn
-# Setup environmental variables
-# Verify the installation
-###
+## Summary of Steps 
+#### 1.) Verify you hava a cuda capable GPU
+#### 2.) Install nvidia cuda toolkit's software dependencies
+#### 3.) Download and install the nvidia cuda toolkit and cudnn
+#### 4.) Setup environmental variables
+#### 5.) Verify the installation
+
 
 ## 1.) Verify you hava a CUDA capable GPU
 
@@ -46,7 +47,7 @@ sudo ln -s /usr/bin/gcc-6 /usr/local/cuda/bin/gcc
 sudo ln -s /usr/bin/g++-6 /usr/local/cuda/bin/g++
 ```
 
-## 2.) Download and install the nvidia cuda toolkit and cudnn
+## 3.) Download and install the nvidia cuda toolkit and cudnn
 
 #### downoad one of the "runfile (local)" installation packages from cuda toolkit archive 
 ```
@@ -87,14 +88,16 @@ sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.0/lib64/
 sudo chmod a+r /usr/local/cuda-9.0/lib64/libcudnn*
 ```
 
-## 3.) setup your environment variables
+## 4.) setup your environment variables
+#### Run the following command
 ```
 echo 'export PATH=/usr/local/cuda-9.0/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## Finally, to verify the installation, check
+## 5.) Finally, to verify the installation, check
+#### Run the following command
 ```
 nvidia-smi
 nvcc -V
