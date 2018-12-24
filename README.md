@@ -13,7 +13,7 @@ This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.
 
 ## 1.) Verify you hava a cuda capable GPU
 
-#### run the following command
+#### verify gpu
 ```
 lspci | grep -i nvidia
 ```
