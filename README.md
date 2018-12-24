@@ -31,13 +31,13 @@ sudo apt install nvidia-driver-390
 sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
 ```
 
-#### cuda 9 requireces gcc>=6, g++>=6, verify that your system meets these requrements if so, move to step 2.)
+#### cuda 9 requires gcc>=6, g++>=6, verify that your system meets these requrements.
 ```
 g++ -v
 gcc -v
 ```
 
-#### cuda 9 requires gcc>=6
+#### If not install or update
 ```
 sudo apt install gcc-6
 sudo apt install g++-6
