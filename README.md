@@ -13,7 +13,7 @@ This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.
 
 ## 1.) Verify you hava a CUDA capable GPU
 
-#### Run the following command
+#### run the following command
 ```
 lspci | grep -i nvidia
 ```
@@ -31,13 +31,13 @@ sudo apt install nvidia-driver-390
 sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libglu1-mesa libglu1-mesa-dev
 ```
 
-#### CUDA 9 requireces gcc>=6, g++>=6, verify that your system meets these requrements if so, move to step 2.)
+#### cuda 9 requireces gcc>=6, g++>=6, verify that your system meets these requrements if so, move to step 2.)
 ```
 g++ -v
 gcc -v
 ```
 
-#### CUDA 9 requires gcc>=6
+#### cuda 9 requires gcc>=6
 ```
 sudo apt install gcc-6
 sudo apt install g++-6
@@ -77,21 +77,22 @@ You will need to manually download version 7.3.0 for Cuda 9.0.
 It will appear in your Downloads directory as cudnn-9.0-linux-x64-v7.3.0.29.tgz
 ```
 
-#### Extract cuda directory
+#### extract cuda directory
 ```
 cd ~/Downloads
 tar -xzvf cudnn-9.0-linux-x64-v7.3.0.29.tgz
 ```
 
-#### Copy the following files into the cuda toolkit directory.
+#### copy the following files into the cuda toolkit directory.
 ```
 sudo cp -P cuda/include/cudnn.h /usr/local/cuda-9.0/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.0/lib64/
 sudo chmod a+r /usr/local/cuda-9.0/lib64/libcudnn*
 ```
 
-## 4.) setup your environment variables
-#### Run the following command
+## 4.) Setup your environment variables
+
+#### add cuda-9.0/bin to your path and cuda-9.0/lib64 to your library path
 ```
 echo 'export PATH=/usr/local/cuda-9.0/bin:$PATH' >> ~/.bashrc
 echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH' >> ~/.bashrc
@@ -100,17 +101,17 @@ source ~/.bashrc
 
 ## 5.) Verify the installation
 
-#### You'll need to reboot for the changes to reflect
+#### reboot to activate changes
 ```
 reboot
 ```
 
-#### Once you've rebooted your machine verify the installation
+#### verify installation
 ```
 nvidia-smi
 nvcc -V
 ```
 
-#### Your terminal output should look similar to this:
+#### your terminal output should look similar to this:
 ![nvidia-smi](https://user-images.githubusercontent.com/8731829/50403622-ae5e0780-0765-11e9-96c3-cf649dbaeac3.png)
 
