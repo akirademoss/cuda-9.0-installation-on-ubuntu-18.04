@@ -1,5 +1,5 @@
 # Cuda 9.0 installation on Ubuntu 18.04 LTS 
-This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.0 in ubuntu 18.04.  This version of CUDA will work with the tensorflow-gpu install. This is a slightly updated and modified version from Github user [Mahedi-61](https://github.com/Mahedi-61).  The original version may be found [here](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73)
+This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.0 in ubuntu 18.04.  This version of CUDA will work with the tensorflow-gpu installation. This is a slightly updated and modified version from Github user [Mahedi-61](https://github.com/Mahedi-61).  The original version may be found [here](https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73)
 
 ## Summary of Steps 
 ```
