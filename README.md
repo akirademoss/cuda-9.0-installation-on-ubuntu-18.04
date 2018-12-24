@@ -98,9 +98,20 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH' >> ~/.b
 source ~/.bashrc
 ```
 
-## 5.) Finally, to verify the installation, check
-#### Run the following command
+## 5.) Verify the installation
+
+#### You'll need to reboot for the changes to reflect
+```
+reboot
+```
+
+#### Once you've rebooted your machine verify the installation
 ```
 nvidia-smi
 nvcc -V
 ```
+
+#### Your output should look similar to this
+
+![nvidia-smi](https://user-images.githubusercontent.com/8731829/50403622-ae5e0780-0765-11e9-96c3-cf649dbaeac3.png)
+
