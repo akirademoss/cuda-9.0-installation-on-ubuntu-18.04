@@ -37,7 +37,7 @@ g++ -v
 gcc -v
 ```
 
-#### If not install or update
+#### if not install or update gcc/g++
 ```
 sudo apt install gcc-6
 sudo apt install g++-6
