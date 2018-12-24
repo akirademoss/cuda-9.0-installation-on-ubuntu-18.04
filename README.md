@@ -111,7 +111,6 @@ nvidia-smi
 nvcc -V
 ```
 
-#### Your output should look similar to this
-
+#### Your terminal output should look similar to this:
 ![nvidia-smi](https://user-images.githubusercontent.com/8731829/50403622-ae5e0780-0765-11e9-96c3-cf649dbaeac3.png)
 
