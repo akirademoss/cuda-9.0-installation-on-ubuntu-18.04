@@ -11,7 +11,7 @@ This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.
 ```
 
 
-## 1.) Verify you hava a CUDA capable GPU
+## 1.) Verify you hava a cuda capable GPU
 
 #### run the following command
 ```
@@ -69,8 +69,8 @@ Install NVIDIA Accelerated Graphics Driver for Linux-x86_64 384.81? n
 Install the CUDA 9.0 Toolkit? y
 ```
 
-#### install cuDNN v7.3.0 for cuda 9
-in order to download cuDNN you have to be regeistered [here](https://developer.nvidia.com/cudnn)
+#### install cudnn v7.3.0 for cuda 9
+NOTE: in order to download cuDNN you have to be regeistered [here](https://developer.nvidia.com/cudnn)
 ```
 To access the file you will first need to login and agree to terms of use
 You will need to manually download version 7.3.0 for Cuda 9.0.
