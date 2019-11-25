@@ -21,6 +21,7 @@ lspci | grep -i nvidia
 ## 2.) Install nvidia cuda toolkit's software dependencies
 
 #### install nvidia driver 
+# Note that the driver version and exact steps for this will depend on your GPU.  Best to look up which driver works for your specific graphics card.  This was the driver that worked for mine.
 ```
 sudo apt install nvidia-compute-utils-390 
 sudo apt install nvidia-driver-390 
@@ -35,12 +36,6 @@ sudo apt-get install g++ freeglut3-dev build-essential libx11-dev libxmu-dev lib
 ```
 g++ -v
 gcc -v
-```
-
-#### if not install or update gcc/g++
-```
-sudo apt install gcc-6
-sudo apt install g++-6
 ```
 
 ## 3.) Download and install the nvidia cuda toolkit and cudnn
