@@ -20,8 +20,7 @@ lspci | grep -i nvidia
 
 ## 2.) Install nvidia cuda toolkit's software dependencies
 
-#### install nvidia driver 
-**Note that the driver version and exact steps for this will depend on your GPU.  Best to look up which driver works for your specific graphics card.  This was the driver that worked for mine.**
+#### install nvidia driver:  **Note that the driver version and exact steps for this will depend on your GPU.  Best to look up which driver works for your specific graphics card.  This was the driver that worked for mine.**
 ```
 sudo apt install nvidia-compute-utils-390 
 sudo apt install nvidia-driver-390 
