@@ -43,12 +43,6 @@ sudo apt install gcc-6
 sudo apt install g++-6
 ```
 
-#### set up symlinks for gcc/g++
-```
-sudo ln -s /usr/bin/gcc-6 /usr/local/cuda/bin/gcc
-sudo ln -s /usr/bin/g++-6 /usr/local/cuda/bin/g++
-```
-
 ## 3.) Download and install the nvidia cuda toolkit and cudnn
 
 #### downoad one of the "runfile (local)" installation packages from cuda toolkit archive 
