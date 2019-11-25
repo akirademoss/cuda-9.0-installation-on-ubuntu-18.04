@@ -21,7 +21,7 @@ lspci | grep -i nvidia
 ## 2.) Install nvidia cuda toolkit's software dependencies
 
 #### install nvidia driver
-Note that the driver version and exact steps for this will depend on your GPU.  This command helps you find what drivers will work with your gpu and reccommend one.  Your driver may be different.  We also install nvidia-modprobe, it’s a utility to load NVIDIA kernel modules and crate NVIDIA character device files automatically every time your machine booting up.
+Note that the driver version and exact steps for this will depend on your GPU.  This command helps you find what drivers will work with your gpu and reccommend one.  Your driver may be different.  We also install nvidia-modprobe, it’s a utility to load NVIDIA kernel modules and crate NVIDIA character device files automatically every time your machine booting up.  You may need to go through additional steps if secure boot is on, however I got mine working by turning secure boot off.  Additionally you will need to reboot.
 ```
 sudo ubuntu-drivers devices
 sudo apt-get install nvidia-driver-440 nvidia-modprobe
