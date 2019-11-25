@@ -8,6 +8,7 @@ This file contains step by step instructions to install cuda v9.0 and cudnn 7.3.
 3.) Download and install the nvidia cuda toolkit and cudnn
 4.) Setup environmental variables
 5.) Verify the installation
+6.) Add symbolic links to gcc-6 and g++-6
 ```
 
 
@@ -104,3 +105,13 @@ nvcc -V
 #### your terminal output should look similar to this:
 ![nvidia-smi](https://user-images.githubusercontent.com/8731829/50403622-ae5e0780-0765-11e9-96c3-cf649dbaeac3.png)
 
+
+## 6.) Add symbolic links to gcc-6 and g++-6 (only need to do this step if installing tensorflow)
+
+#### Because the version of tensorflow
+Trying to build Tensorflow with the default Ubuntu 18.04 gcc and g++ compilers will give the following error: ```unsupported GNU version! gcc versions later than 6 are not supported!```.  Thus we must link the cuda compiler to gcc-6 and g++6 in preparation for building Tensorflow from sources.
+
+```
+sudo ln -s /usr/bin/gcc-6 /usr/local/cuda/bin/gcc
+sudo ln -s /usr/bin/g++-6 /usr/local/cuda/bin/g++
+```
