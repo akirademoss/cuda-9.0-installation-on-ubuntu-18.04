@@ -108,10 +108,12 @@ nvcc -V
 
 ## 6.) Add symbolic links to gcc-6 and g++-6 (only need to do this step if installing tensorflow)
 
-#### Because the version of tensorflow
+#### Install gcc-6 and g++6, then symlink your cuda compilers to these
 Trying to build Tensorflow with the default Ubuntu 18.04 gcc and g++ compilers will give the following error: ```unsupported GNU version! gcc versions later than 6 are not supported!```.  Thus we must link the cuda compiler to gcc-6 and g++6 in preparation for building Tensorflow from sources.
 
 ```
+sudo apt install gcc-6
+sudo apt install g++-6
 sudo ln -s /usr/bin/gcc-6 /usr/local/cuda/bin/gcc
 sudo ln -s /usr/bin/g++-6 /usr/local/cuda/bin/g++
 ```
